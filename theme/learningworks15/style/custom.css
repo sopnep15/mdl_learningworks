@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'MavenPro';
+    src: url('[[font:theme|maven_pro_bold-webfont.eot]]');
+    src: url('[[font:theme|maven_pro_bold-webfont.eot?#iefix]]') format('eot'),
+         url('[[font:theme|maven_pro_bold-webfont.woff]]') format('woff'),
+         url('[[font:theme|maven_pro_bold-webfont.ttf]]') format('truetype'),
+         url('[[font:theme|maven_pro_bold-webfont.svg#webfontNOU7iUTL]]') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('[[font:theme|maven_pro_medium-webfont.eot]]');
+    src: url('[[font:theme|maven_pro_medium-webfont.eot?#iefix]]') format('eot'),
+         url('[[font:theme|maven_pro_medium-webfont.woff]]') format('woff'),
+         url('[[font:theme|maven_pro_medium-webfont.ttf]]') format('truetype'),
+         url('[[font:theme|maven_pro_medium-webfont.svg#webfontNj5iy4Dl]]') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('[[font:theme|maven_pro_regular-webfont.eot]]');
+    src: url('[[font:theme|maven_pro_regular-webfont.eot?#iefix]]') format('eot'),
+         url('[[font:theme|maven_pro_regular-webfont.woff]]') format('woff'),
+         url('[[font:theme|maven_pro_regular-webfont.ttf]]') format('truetype'),
+         url('[[font:theme|maven_pro_regular-webfont.svg#webfontOM8fITNz]]') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MavenPro';
+    src: url('[[font:theme|mavenprolight-300-webfont.eot]]');
+    src: url('[[font:theme|mavenprolight-300-webfont.eot?#iefix]]') format('embedded-opentype'),
+         url('[[font:theme|mavenprolight-300-webfont.woff]]') format('woff'),
+         url('[[font:theme|mavenprolight-300-webfont.ttf]]') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('[[font:theme|Roboto-Regular.ttf]]') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('[[font:theme|Roboto-Bold.ttf]]') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('[[font:theme|Roboto-Light.ttf]]') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('[[font:theme|Roboto-Italic.ttf]]') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('[[font:theme|Roboto-BoldItalic.ttf]]') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('[[font:theme|Roboto-LightItalic.ttf]]') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+body {
+    font-family: "MavenPro","Roboto","Helvetica","Arial","sans-serif";
+}
+
+/*
+* HEADER STYLING
+*/
+.logo-header {
+    height: 95px;
+    padding-left: 10px;
+    padding-top: 53px;
+    display: none;
+}
+.navbar .navbar-inner {
+    height: 60px;
+}
+
+/*
+* FOOTER STYLING
+*/
+
+.global-footer {
+    position: relative;
+    margin-top: 2em;
+
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+}
+
+.global-footer .copyright {
+    display: none;
+}
+
+.global-footer .icon-wrapper {
+    display: block;
+    margin: 0 20px;
+    padding: 0;
+    width: auto;
+}
+
+.global-footer .icon-wrapper .fa {
+    padding: 15px 15px;
+}
+
+.global-footer .icon-wrapper li {
+    float: left;
+    list-style: none;
+}
+
+.global-footer .icon-wrapper li:last-child {
+    float: right;
+}
+
+.global-footer .button-top {
+    height: 70px;
+}
+
+.global-footer .learningworks {
+    font-weight: 300;
+    font-family: "MavenPro";
+}
+
+.global-footer .learningworks span {
+    font-weight: 900;
+}
+
+#page {
+        padding-top: 80px;
+    }
+ 
+@media (min-width: 768px) {
+    #page {
+        padding-bottom: 100px;
+    }
+
+    .global-footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+
+@media (min-width: 550px) {
+    .global-footer .copyright {
+        display: block;
+        margin: 1.8em 0;
+        padding: 0;
+        float: left;
+    }
+
+    .global-footer .icon-wrapper {
+        float: right;
+        width: auto;
+        margin: 0;
+    }
+
+    .global-footer .icon {
+        float: right;
+    }
+
+    .global-footer .icon-wrapper li:last-child {
+        float: left;
+    }
+}
+
+/*
+* BLOCK HEADER
+*/
+
+.block {
+    padding: 0;
+}
+
+.block .header {
+    padding: 4px 0;
+    background: #666;
+
+}
+
+.block .header h2 {
+    text-shadow: none;
+}
+
+/* Custom CSS
+-------------------------*/
+a.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 42px;
+    width: 150px;
+    background-size: contain;
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+.dir-rtl a.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+    font-family: "MavenPro","Roboto","Helvetica","Arial","sans-serif";
+}
+
+#region-main #block-region-content .header{
+    background-color: #7DA51C;
+}
+
+#block-region-content .content .course_list .course_title .title a,
+#block-region-content .content .course_list .course_title .title a:hover,
+#block-region-content .content .course_list .course_title .title a:focus{
+    color: #577212;
+}
+
+.custom-block{
+    position:relative;
+}
+
+
+.custom-block span{
+    padding: 2em;
+    display: block;
+    background: #668617;
+    margin-bottom: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-left: 100px;
+}
+
+.custom-block span:after{
+    content: "";
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(-120%, -70%);
+    transform: translate(-120%, -70%);
+    width: 64px;
+    height: 64px;
+}
+
+.two-minute span:after{
+    background: url([[pix:theme|play-icon]]) no-repeat 100% 0;
+}
+.learner-support span:after{
+    background: url([[pix:theme|info-icon]]) no-repeat 100% 0;
+}
+
+
+#block-region-content .content .course_list .course_title .title a,
+#block-region-content .content .course_list .course_title .title a:hover{
+   color: #333; 
+}
+
+div.content > div.history
+{
+    display: none;
+}
+
+div.quizattemptcounts .btn.button 
+{
+    margin-bottom: 1em;
+}
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
+
+/* IE FIX */
+.navbar-inner {
+    -ms-filter:  progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
+    filter: 0 !important;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    min-height: 350px;
+    min-width: 260px;
+    width: 100%;
+}
+.card h2 {
+    text-align: center;
+    font-size: 1.75em;
+    padding: 15px;
+}
+.card p {
+    padding: 0 5%;
+}
+
+.image-container {
+    width: 100%;
+    height: 150px;
+    background: rgb(50,50,50);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 20%;
+}
+
+.image-info{
+    background-image: url([[pix:theme|info-icon]]);
+    background-image: linear-gradient(transparent, transparent), url([[pix:theme|info-icon]]);
+}
+.image-phone{
+    background-image: url([[pix:theme|phone-icon]]);
+    background-image: linear-gradient(transparent, transparent), url([[pix:theme|phone-icon]]);
+}
+.image-play{
+    background-image: url([[pix:theme|[play-icon]]);
+    background-image: linear-gradient(transparent, transparent), url([[pix:theme|play-icon]]);
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

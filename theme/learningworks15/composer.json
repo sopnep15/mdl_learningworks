@@ -1,0 +1,16 @@
+{
+  "name": "learningworks/moodle-theme_learningworks15",
+  "type": "moodle-theme",
+  "extra": {
+    "installer-name": "learningworks15",
+    "installer-paths": {
+      "moodle/block/{$name}/": [
+        "type:moodle-theme"
+      ]
+    }
+  },
+  "require": {
+    "moodle/moodle": ">=2.7",
+    "composer/installers": "~1.0"
+  }
+}

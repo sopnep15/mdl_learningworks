@@ -1,0 +1,205 @@
+// ========================================
+//
+// 				LOGINPAGE LAYOUT
+//
+// ========================================
+
+/*
+* Login page styles are set so that there are 2 panels on the page instead
+* of one. Border and background set on the panels to match site vars.
+*/
+.pagelayout-login {
+
+	// #username,
+	// #password {
+	// 	-webkit-user-modify: read-write-plaintext-only;
+	// }
+
+	// REMOVES ANY BORDERS OR BACKGROUND SET ON REGION MAIN
+	#region-main {
+		border: 0;
+		background: none;
+
+		// THE PANEL WITH THE LOGIN AND GUEST ACCESS FORMS
+		.loginpanel {
+			padding: 1em 2em;
+			box-sizing: border-box;
+			border-radius: 0;
+			border: 0;
+			background: #fff;
+
+			@media all and (max-width: 979px) {
+				padding: 1em 0;
+			}
+
+			// HIDES COOKIE MESSAGE
+			.desc {
+				display: none;
+			}
+		} 
+
+		// PANEL FOR NEW REGISTRATIONS, INCL. HOWTO DESCRIPTION
+		.signuppanel {
+			padding: 1em 2em;
+			float: right;
+			box-sizing: border-box;
+			border-radius: 0;
+			//border: 1px solid #E5E5E5;
+			border: 0;
+			background: #fff;
+		}
+	}
+
+	.global-footer{
+		margin-bottom: 0;
+	}
+
+	.loginbox {
+		float: left;
+		width: 38.9%;
+		margin: 0 2%;
+		border-right: 1px solid #E5E5E5;
+
+		@media all and (max-width: 769px) {
+			border-right: 0;
+		}
+
+		@media all and (max-width: 1280px) {
+			width: 48.9%;
+		}
+	}
+
+	.tutorialbox {
+		float: right;
+		width: 56.9%;
+
+		@media all and (max-width: 1280px) {
+			width: 46.9%;
+		}
+
+		.subtitle {
+			font-size: 18px;
+			color: #555;
+			line-height: 18px * 1.33;
+		}
+
+		.video-wrapper {
+			position: relative;
+			margin: 2em 0;
+			width: 800px;
+			height: 450px;
+
+			.ie8 & {
+				width: 410px;
+				height: 240px;
+			}
+
+			@media all and (max-width: 1550px) {
+				width: 700px;
+				height: 400px;
+			}
+
+			@media all and (max-width: 1280px) {
+				width: 560px;
+				height: 310px;
+			}
+
+			@media all and (max-width: 1250px) {
+				width: 515px;
+				height: 285px;
+			}
+
+			@media all and (max-width: 1150px) {
+				width: 475px;
+				height: 265px;
+			}
+
+			@media all and (max-width: 1050px) {
+				width: 410px;
+				height: 240px;
+			}
+
+			@media all and (max-width: 950px) {
+				width: 350px;
+				height: 206px;
+			}
+
+			@media all and (max-width: 769px) {
+				height: 300px;
+			}
+
+			@media all and (max-width: 500px) {
+				height: 200px;
+			}
+
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	#login {
+		padding: 0 15%;
+		position: relative;
+		text-align: right;
+
+		@media all and (max-width: 979px) {
+			padding: 0;
+		}
+
+		.form-label {
+			float: left;
+			text-align: left;
+			width: 29%;
+
+			@media all and (max-width: 350px) {
+				width: 100%;
+			}
+
+			label {
+				margin: 5px;
+			}
+		}
+
+		.form-input {
+			position: relative;
+			box-sizing: border-box;
+			float: left;
+			width: 70%;
+
+			@media all and (max-width: 350px) {
+				width: 100%;
+			}
+
+			input {
+				width: 100%;
+				position: relative;
+				box-sizing: border-box;
+				height: 30px;
+			}
+		}
+
+		#loginbtn {
+			margin-top: 2em;
+		}
+
+		.forgetpass {
+			margin-top: 1em;
+		}
+	}
+
+	@media all and (max-width: 769px) {
+		.loginbox, .tutorialbox {
+			width: 100%;
+		}
+
+		.tutorialbox {
+			margin-top: 2em;
+
+			.video-wrapper {
+				width: 100%;
+			}
+		}
+	}
+}

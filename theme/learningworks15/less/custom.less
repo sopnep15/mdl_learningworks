@@ -1,0 +1,214 @@
+@BarColor:          			#005984;
+@BarOffColor:					lighten(@BarColor, 5%);
+@BarTextColor:					#FFFFFF;
+@BarLinkColor:					#FFFFFF;
+@BarLinkHover:      			#D1D92E;
+
+@btnTextColor:      			#FFFFFF;
+
+@btnOverrideColor:  			#EF7D00;
+@btnOverrideColorHighlight:     darken(@btnOverrideColor, 5%);
+@btnBorderColor:				darken(@btnOverrideColor, 15%);
+
+@btnPrimaryColor:				#95C11F;
+@btnPrimaryColorHighlight: 		darken(@btnPrimaryColor, 5%);
+@btnPrimaryBorderColor:			darken(@btnPrimaryColor, 15%);
+
+@blockHeaderBackground:			#AAAAAA;
+@blockHeaderText:				#FFFFFF;
+
+#adminsettings h3 {
+	color: @textColor;
+}
+
+/*
+* BLOCK HEADER
+*/
+
+.block .header {
+    background: @blockHeaderBackground;
+ }
+
+ .block .header h2 {
+    color: @blockHeaderText;
+ }
+
+.block .header .block_action .block-hider-show,
+.block .header .block_action .block-hider-hide {
+    background: @blockHeaderText;
+}
+
+.block .header .block_action>* {
+    background: @blockHeaderText;
+}
+
+/*
+* BUTTON STYLES
+*/
+
+.btn {
+  .buttonBackground(@btnOverrideColor, @btnOverrideColor, @btnTextColor, 0);
+  box-shadow: 0 3px @btnBorderColor;
+  outline: none;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  text-shadow: none;
+  font-family: "MavenPro";
+  font-weight: bold;
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+    .buttonBackground(@btnOverrideColorHighlight, @btnOverrideColorHighlight, @btnTextColor, 0);
+    box-shadow: 0 1px @btnBorderColor;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.btn-primary {
+  .buttonBackground(@btnPrimaryColor, @btnPrimaryColor, @btnTextColor, 0);
+  box-shadow: 0 3px @btnPrimaryBorderColor;
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+    .buttonBackground(@btnPrimaryColorHighlight, @btnPrimaryColorHighlight, @btnTextColor, 0);
+    box-shadow: 0 1px @btnPrimaryBorderColor;
+  }
+}
+
+div.quizattemptcounts .btn.button {
+    .buttonBackground(@btnPrimaryColor, @btnPrimaryColor, @btnTextColor, 0);
+  box-shadow: 0 3px @btnPrimaryBorderColor;
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
+    .buttonBackground(@btnPrimaryColorHighlight, @btnPrimaryColorHighlight, @btnTextColor, 0);
+    box-shadow: 0 1px @btnPrimaryBorderColor;
+  }
+}
+
+/*
+* FOOTER STYLING
+*/
+
+.global-footer {
+    background: @BarColor;
+    border-top: 2px solid @BarOffColor;
+    
+    p, .icon {
+    	color: @BarTextColor;
+    }
+    a, .icon a {
+    	color: @BarLinkColor;
+    }
+    .icon a:focus, .icon a:hover, a:hover, a:focus {
+      color: @BarLinkHover;
+    }
+    .button-top {
+    	background: @BarOffColor;
+    }
+}
+
+/*
+* HEADER STYLING
+*/
+
+.navbar {
+
+  .usermenu .login a {
+    color: @BarLinkColor;
+  }
+  .usermenu .login a:hover {
+    color: @BarLinkHover;
+  }
+  .usermenu .moodle-actionmenu .userbutton .usertext, .usermenu .login{
+    text-transform: uppercase;
+  }
+  .usermenu .moodle-actionmenu .userbutton .usertext:hover{
+    color: @BarLinkHover;
+  }
+  .navbar-inner {
+    background: @BarColor;
+    border: 0;
+    height: 60px;
+    padding: 9px 0 9px 0;
+    box-sizing: border-box;
+  }
+
+  .nav{
+    float: right;
+    line-height: 22px;
+  }
+  .nav > li > a {
+  	color: @BarLinkColor;
+  	text-shadow: initial;
+  }
+  
+  .navbar-text, .usermenu .moodle-actionmenu .userbutton .usertext{
+    color: @BarTextColor;
+    text-shadow: initial;
+  }
+
+  .usermenu .login {
+  	color: @BarTextColor;
+  }
+
+  .usermenu .moodle-actionmenu.show {
+    background-color: @BarOffColor;
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    color: @BarLinkHover;
+    text-shadow: initial;
+  }
+
+  .nav .active > a,
+  .nav .active > a:hover,
+  .nav .active > a:focus {
+    color: @BarLinkColor;
+    background-color: @BarColor;
+  }
+
+  // Inline text links
+  .navbar-link {
+    color: @BarLinkColor;
+    &:hover,
+    &:focus {
+      color: @BarLinkHover;
+    }
+  }
+
+  // Dividers in navbar
+  .divider-vertical {
+    border-left-color: @BarOffColor;
+    border-right-color: @BarOffColor;
+  }
+
+  // Dropdowns
+  .nav li.dropdown.open > .dropdown-toggle,
+  .nav li.dropdown.active > .dropdown-toggle,
+  .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: @BarColor;
+    color: @BarLinkHover;
+    text-shadow: initial !important;
+  }
+  .nav li.dropdown > a:hover .caret,
+  .nav li.dropdown > a:focus .caret {
+    border-top-color: @BarLinkHover;
+    border-bottom-color: @BarLinkHover;
+  }
+  .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: @BarLinkColor;
+    border-bottom-color: @BarLinkColor;
+  }
+  .nav li.dropdown.open > .dropdown-toggle .caret,
+  .nav li.dropdown.active > .dropdown-toggle .caret,
+  .nav li.dropdown.open.active > .dropdown-toggle .caret, {
+    border-top-color: @BarLinkHover;
+    border-bottom-color: @BarLinkHover;
+  }
+  .toggle-display.textmenu .caret {
+  	border-top-color: #FFF !important;
+  }
+  // Navbar collapse button
+  .btn-navbar {
+    .buttonBackground(darken(@navbarInverseBackgroundHighlight, 5%), darken(@navbarInverseBackground, 5%));
+  }
+
+}
